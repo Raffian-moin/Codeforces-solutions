@@ -10,11 +10,11 @@ while count < test_cases:
 
     number_of_yes = math.ceil(answer_length/3)
 
-    for _ in range(number_of_yes):
+    for _ in range(number_of_yes+1):
         yes = yes + 'Yes'
 
     if answer in yes:
         print('YES')
     else:
-        print('No')
+        print('NO')
     count += 1
