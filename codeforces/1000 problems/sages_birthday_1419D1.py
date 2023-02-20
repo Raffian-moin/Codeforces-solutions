@@ -9,9 +9,8 @@ a = []
 
 for i in range(len(right)):
     a.append(right[i])
-    if i <= len(left)-1:
-        a.append(left[len(left)-i-1])
+    if i+1 <= len(left):
+        a.append(left[i])
 
-
-print(sum(left[-((n-1)//2):]))
+print((n-1)//2)
 print(*a)
