@@ -1,16 +1,11 @@
-MyList = [1, 1, 2, 2, 3, 3]
-flag = 1
-for i in MyList:
-    print(i)
-    if MyList.count(i)%2 != 0:
-        flag = 0
-        break
+from collections import Counter
+for _ in range(int(input())):
+    n = int(input())
+    s = list(map(int, input().split()))
 
-if flag == 0:
-    print(-1)
-else:
-    for i in range(1, 2):
-        last = MyList[0]
-        MyList[i-1] = MyList[i]
-    
-    MyList[len(MyList)-1] = last
+    c = Counter(s)
+    if any(x == 1 for x in c.values()):
+        print(-1)
+        continue
+        
+    print(*[i if i!=0 and s[i]==s[i-1] else i+c[s[i]] for i in range(n)])
