@@ -1,13 +1,18 @@
-x,y=input().split()
-x=int(x)
-s=input()
-s+=s
-p=len(s)
-ans=0
-for i in range(len(s)-1,-1,-1):
-    print(i)
-    if(s[i]=='g'):
-        p=i
-    if(s[i]==y):
-        ans=max(ans,p-i)
-print(ans)
+for _ in range(int(input())):
+    n,c=input().split()
+    s=input()
+    s+=s
+    n=int(n)
+    m=0
+    start=-1
+
+    for i in range(n*2):
+        if s[i]==c and start==-1:
+            start=i
+        if start>=0 and s[i]=='g':
+            m=max(m, i-start)
+            start=-1
+            if i>=n:
+                break
+
+    print(m)
