@@ -1,2 +1,3 @@
 Codeforces Solutions
-This repository is about Codeforces practice problems using Python from 
+This repository is about Codeforces practice problems using Python.
+Aiming to improve problem solving skill.
