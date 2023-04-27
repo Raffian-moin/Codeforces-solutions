@@ -1,2 +1,2 @@
 Codeforces Solutions
-	This repository is about practice problems from Codeforces
+This repository is about Codeforces practice problems using Python from 
