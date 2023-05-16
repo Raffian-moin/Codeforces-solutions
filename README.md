@@ -3,7 +3,7 @@
 ## Problems Difficulty?
 currently ranges from 800-1300
 ## Techniques Implemented?
-Two Pointers, Sliding Window, Binary Search, Pigeonhole, Number Theory, Brute Force, Constructive, Math
+Two Pointers, Sliding Window, Prefix Sum, Binary Search, Pigeonhole, Number Theory, Brute Force, Constructive, Math
 ## How Do I practice?
 I choose rated problems that are slightly above my current rating.
 Solve few problems of that particular rating to boost confidence.Then move on to medium difficulty
